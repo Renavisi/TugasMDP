@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detailCar.DetailActivity">
+
+
+    <TextView
+        android:id="@+id/tvTampil_Taun"
+        android:layout_width="355dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvTampil_nama"
+        app:layout_constraintTop_toBottomOf="@+id/Tahun" />
+
+    <TextView
+        android:id="@+id/tvTampil_Model"
+        android:layout_width="355dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTampil_Merek"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTampil_Merek"
+        app:layout_constraintTop_toBottomOf="@+id/Model" />
+
+    <TextView
+        android:id="@+id/tvTampil_Merek"
+        android:layout_width="355dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTampil_nama"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTampil_nama"
+        app:layout_constraintTop_toBottomOf="@+id/Merek" />
+
+    <TextView
+        android:id="@+id/tvTampil_nama"
+        android:layout_width="355dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nama" />
+
+    <TextView
+        android:id="@+id/Nama"
+        android:layout_width="84dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:text="Nama"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTampil_nama"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Merek"
+        android:layout_width="84dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Merek"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTampil_nama"
+        app:layout_constraintTop_toBottomOf="@+id/tvTampil_nama" />
+
+    <TextView
+        android:id="@+id/Model"
+        android:layout_width="84dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Model"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/Merek"
+        app:layout_constraintTop_toBottomOf="@+id/tvTampil_Merek" />
+
+    <TextView
+        android:id="@+id/Tahun"
+        android:layout_width="84dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Tahun"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTampil_nama"
+        app:layout_constraintTop_toBottomOf="@+id/tvTampil_Model" />
+
+</android.support.constraint.ConstraintLayout>
